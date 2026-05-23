@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill</title>
+    <meta name="description" content="Bill 的个人站：记录 AI 产品实验、当前关注、项目进展、阅读和工作系统">
+    <meta name="theme-color" content="#f4f1ea">
+    <meta property="og:title" content="Bill">
+    <meta property="og:description" content="记录 AI 产品实验、当前关注、项目进展、阅读和工作系统">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <link rel="canonical" href="/">
+    <link rel="icon" href="assets/favicon-bill.svg?v=3" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css?v=20260521-17">
+    <script>
+      const siteUrl = new URL("/", window.location.origin).href;
+      document.querySelector('meta[property="og:url"]')?.setAttribute("content", siteUrl);
+      document.querySelector('link[rel="canonical"]')?.setAttribute("href", siteUrl);
+    </script>
+    <script src="assets/reading-data.js?v=20260521-14" defer></script>
+    <script src="assets/site.js?v=20260523-6" defer></script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header" data-elevates>
+      <nav class="nav-shell nav-minimal" aria-label="主导航">
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-menu-toggle>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="#focus">Focus</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#reading">Reading</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="home-shell">
+      <section class="pure-hero container reveal">
+        <div class="hero-inner">
+          <h1 class="shimmer-title">把复杂世界拆成可玩的 AI 产品</h1>
+          <p>我是 Bill，正在探索 AI 在社交、电商、出海等领域的有趣落地形态，并尝试在过程中沉淀更好的 opc 经验和系统化思考</p>
+          <div class="tag-list" aria-label="个人标签">
+            <span>AI Builder</span>
+            <span>Consumer Product</span>
+            <span>Growth</span>
+            <span>Global Product</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" class="feature-block container reveal">
+        <div class="block-head">
+          <div>
+            <h2>当前关注</h2>
+          </div>
+        </div>
+        <div class="card-grid three">
+          <article class="content-card">
+            <span class="card-label">Companion</span>
+            <h2>AI 陪伴</h2>
+            <p>探索不直接拟人的陪伴体验：用动作、记忆、主动触发和情绪趋势，让 AI 更像一个真实存在的伙伴</p>
+          </article>
+          <article class="content-card">
+            <span class="card-label">Workflow</span>
+            <h2>AI-native 工作流</h2>
+            <p>关注如何让 AI 充分参与到日常工作，充分发挥杠杆效应，撬动个体的价值</p>
+          </article>
+          <article class="content-card">
+            <span class="card-label">Global</span>
+            <h2>出海</h2>
+            <p>关注面向全球市场的小产品机会：更窄的用户、更清晰的场景、更快的验证和更直接的分发</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="feature-block container reveal">
+        <div class="block-head">
+          <div>
+            <h2>项目</h2>
+          </div>
+        </div>
+        <div class="card-grid projects">
+          <article class="content-card project-card">
+            <span class="card-label">Preparing</span>
+            <h2>德扑 AI 本地训练器</h2>
+            <p>用强化学习训练多种打法的本地机器人，结合每局复盘与机器人分析，帮助用户提升德扑判断能力</p>
+          </article>
+          <article class="content-card project-card">
+            <span class="card-label">Prototype</span>
+            <h2>AI 陪伴宠物</h2>
+            <p>一个用表情、动作和伪语言互动的 AI pet App，目标是提供“不是人，但有真实互动”的情感陪伴</p>
+          </article>
+          <article class="content-card project-card">
+            <span class="card-label">Exploring</span>
+            <h2>个性化 Workspace</h2>
+            <p>用 AI 聚合本地应用、浏览器书签和效率工具，生成可视化工作看板，后续接入信息流等模块</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="feature-block container reveal">
+        <div class="block-head">
+          <div>
+            <h2>过往经历</h2>
+          </div>
+        </div>
+        <div class="vertical-timeline">
+          <article class="timeline-item">
+            <time>Now</time>
+            <div class="content-card experience-card">
+              <h2>AI Builder</h2>
+              <p>从大厂主动离开，探索做一些有意思的产品、工具、项目</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2021 — 2026</time>
+            <div class="content-card experience-card">
+              <h2>互联网产品</h2>
+              <p>5 年产品 & 增长经验，千万级日活项目的产品负责人</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>Earlier</time>
+            <div class="content-card experience-card">
+              <h2>金融研究投资</h2>
+              <p>本硕金融背景，头部卖方研究、硬科技与新消费 VC 实习</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="reading" class="feature-block reading-block container reveal">
+        <div class="block-head">
+          <div>
+            <h2>阅读</h2>
+          </div>
+        </div>
+        <div class="reading-layout">
+          <div class="reading-shelf" aria-label="阅读分类与书籍" data-reading-shelf>
+            <div class="shelf-empty">正在整理已读完书籍</div>
+          </div>
+          <aside class="reading-card" data-reading-card aria-live="polite" hidden>
+            <div class="reading-card-top">
+              <div>
+                <h3 data-reading-title></h3>
+                <p data-reading-author></p>
+                <em data-reading-meta></em>
+              </div>
+              <button class="note-close" type="button" aria-label="关闭笔记卡片" data-note-close>×</button>
+            </div>
+            <div class="reading-note-scroll">
+              <blockquote data-reading-note></blockquote>
+            </div>
+            <div class="note-controls">
+              <button type="button" aria-label="上一条笔记" data-note-prev>←</button>
+              <span data-note-count>1 / 1</span>
+              <button type="button" aria-label="下一条笔记" data-note-next>→</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="contact" class="feature-block contact-block container reveal">
+        <div class="contact-panel">
+          <div>
+            <span>Contact</span>
+            <h2 class="contact-copy">
+              <span>如果你也感兴趣以下内容：</span>
+              <strong>AI产品/AI-native工作流/出海</strong>
+              <em>欢迎找我聊聊</em>
+            </h2>
+          </div>
+          <div class="contact-links icon-links">
+            <a href="mailto:billxfan@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16v11H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              Email
+            </a>
+            <a href="https://github.com/billxfan" rel="noreferrer">
+              <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+            <a href="https://web.okjike.com/u/EE0752A1-158C-4353-B439-1A51A4B9B60F" rel="noreferrer">
+              <img class="brand-icon" src="assets/jike-icon.png" alt="" aria-hidden="true">
+              即刻
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
