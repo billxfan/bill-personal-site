@@ -1,5 +1,14 @@
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
+const langToggle = document.querySelector("[data-lang-toggle]");
+const pageLang = document.body?.dataset.lang || "zh";
+const isEnglish = pageLang === "en";
+const browserPrefersEnglish = (navigator.language || "").toLowerCase().startsWith("en");
+
+const uiText = {
+  emptyReading: isEnglish ? "Finished books are being organized" : "正在整理已读完书籍",
+  fallbackNote: isEnglish ? "This book has been finished. More shareable notes will be organized later." : "这本书已经读完，后续会继续整理可展示的笔记"
+};
 
 document.documentElement.classList.add("js-ready");
 
@@ -28,6 +37,23 @@ if (menuToggle && navLinks) {
       menuToggle.setAttribute("aria-expanded", "false");
       navLinks.classList.remove("is-open");
     });
+  });
+}
+
+if (langToggle) {
+  const goToEnglish = pageLang !== "en";
+  const targetUrl = goToEnglish ? "./en/index.html" : "../index.html";
+  const targetLabel = goToEnglish ? "English" : "中文";
+  langToggle.setAttribute("aria-label", `切换到 ${targetLabel}`);
+  langToggle.textContent = goToEnglish ? "EN" : "中";
+  const isEntryPage = window.location.pathname === "/" || /\/index\.html?$/.test(window.location.pathname);
+  if (browserPrefersEnglish && pageLang !== "en" && isEntryPage) {
+    window.addEventListener("DOMContentLoaded", () => {
+      window.location.href = "./en/index.html";
+    }, { once: true });
+  }
+  langToggle.addEventListener("click", () => {
+    window.location.href = targetUrl;
   });
 }
 
@@ -131,7 +157,7 @@ const createBookButton = (book) => {
   button.dataset.bookAuthor = book.author || "";
   button.dataset.bookMeta = book.meta || "";
   button.dataset.bookNoteCount = String(book.noteCount || (book.notes || []).length || 1);
-  button.dataset.bookNotes = (book.notes && book.notes.length ? book.notes : ["这本书已经读完，后续会继续整理可展示的笔记"]).join("||");
+  button.dataset.bookNotes = (book.notes && book.notes.length ? book.notes : [uiText.fallbackNote]).join("||");
   return button;
 };
 
