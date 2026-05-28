@@ -494,11 +494,16 @@ strong {
 }
 
 .project-card-cta {
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
   display: inline-flex;
-  margin-top: 18px;
+  align-items: center;
+  justify-content: center;
   color: var(--accent);
   font-size: 14px;
   font-weight: 650;
+  letter-spacing: 0.01em;
 }
 
 .project-card-link {
