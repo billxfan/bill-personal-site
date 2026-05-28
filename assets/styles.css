@@ -493,6 +493,14 @@ strong {
   color: var(--muted);
 }
 
+.project-card-cta {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 650;
+}
+
 .project-card-link {
   min-height: 310px;
   display: flex;
